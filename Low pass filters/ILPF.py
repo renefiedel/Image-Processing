@@ -3,7 +3,7 @@ import numpy as np
 import imageio
 from PIL import Image, ImageDraw
 
-image1 = imageio.imread('home/renefiedel/PycharmProjects/Image-Processing/Images/Lenna_(test_image).png', as_gray=True)
+image1 = imageio.imread('lena.jpg', as_gray=True)
 
 image1_np = np.array(image1)  # convert image to numpy array
 
@@ -30,3 +30,5 @@ ifft2 = np.maximum(0, np.minimum(ifft2, 255))
 
 # save the image
 imageio.imsave('fft-then-ifft.png', ifft2.astype(np.uint8))
+
+#

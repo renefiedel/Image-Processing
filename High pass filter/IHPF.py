@@ -1,6 +1,9 @@
+import imageio
+from scipy import fftpack
 from skimage.io import imread
 import matplotlib.pyplot as plt
 import scipy.fftpack as fp
+import numpy as np
 
 im = imageio.imread('lena.jpg', as_gray=True)  # assuming an RGB image
 plt.figure(figsize=(10, 10))
